@@ -1,0 +1,176 @@
+  /* Day and Night Theme Styles */
+  body.light-theme {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+body.dark-theme {
+    background-color:  #000;
+    color: #ffffff !important; /* Ensures text color is white on dark theme */
+}
+
+
+.navbar {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar.light-theme {
+ 
+    color: #000;
+}
+
+.navbar.dark-theme {
+  background-color:  #000;
+    color: #ffffff !important;
+}
+.row.navbar.dark-theme{
+  background-color:  #000;
+    color: #ffffff !important;
+}
+
+.nav-link {
+    color: inherit !important; /* Inherit text color from parent theme */
+}
+
+.theme-toggle {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+.history.dark-them{
+  background-color: #000;
+  color: #fff;
+}
+hr.drak-theme{
+  background-color: #f8f9fa;
+  color: #fff;
+  color: inherit !important;
+
+}
+    /* Hero section styling */
+    
+.hero {
+  background-image: url('images/hero\ image.jpg'); /* Replace with your image path */
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.hero-content {
+  z-index: 1; /* Keeps content above the overlay */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+  
+      /* Hero content styling */
+      .hero-content {
+        z-index: 1;
+      }
+  
+      .hero-title {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+  
+      .hero-subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+  
+      .hero-btn {
+        font-size: 1.25rem;
+        padding: 0.75rem 2rem;
+      }
+
+      .highlight {
+        font-weight: bold;
+        color: #007bff;
+    }
+      /* establishment-section */
+
+      .establishment-section {
+        background-color: #ffffff;
+        padding: 50px 0;
+    }
+    .establishment-section h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .establishment-section p {
+        font-size: 18px;
+        color: #555;
+        line-height: 1.8;
+    }
+#contact-section .locaton{
+  text-decoration: none;
+  
+}
+
+#contact-section .locaton:hover{
+  text-decoration: overline;
+  color: #547496;
+}
+ /* Basic styles for the footer */
+ .footer {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  
+}
+
+.footer .social-icons a {
+  color: #fff;
+  margin: 0 5px;
+ 
+}
+
+.footer .social-icons a:hover {
+  color: #00acee; /* Example hover color for Twitter */
+}
+
+.footer p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .hero-title {
+          font-size: 2rem;
+        }
+        .hero-subtitle {
+          font-size: 1.2rem;
+        }
+        .hero-btn {
+          font-size: 1rem;
+         
+        }
+      
+      }
